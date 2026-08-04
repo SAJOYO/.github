@@ -2,7 +2,7 @@
 
 ```mermaid
 gantt
-    title 미니프로젝트 (일차별 일정)
+    title 미니발표 (일차별 일정)
     dateFormat  YYYY-MM-DD
     
     %% 축을 일수(Day 01, Day 05...) 형태로 표시하고 5일 단위로 눈금을 끕니다
