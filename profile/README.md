@@ -37,10 +37,11 @@ gantt
     5차 멘토링               : a4, after a3, 1d
 
     section 중간발표
-    준비, 멘토링             : b1, after a4, 19d
+    준비, 멘토링             : b1, after a4, 18d
+    발표                   : b2, after b1, 1d
 
     section 최종발표
-    개발, 멘토링             : c1, after b1, 16d
+    개발, 멘토링             : c1, after b2, 16d
     발표                   : c2, after c1, 1d
 
 ```
