@@ -1,3 +1,5 @@
+## 미니프로젝트
+
 ```mermaid
 gantt
     title 미니프로젝트 (일차별 일정)
@@ -10,12 +12,12 @@ gantt
     section 기획
     주제 선정                : active, a1, 2026-01-01, 1d
     1차 멘토링               : a2, after a1, 1d
-    준비                    : a3, after a2, 2d
-    2차 멘토링               : a4, after a3, 1d
 
     section 개발
-    개발                   : b1, after a4, 1d
-    발표                   : b2, after b1, 1d
+    개발                    : b1, after a2, 1d
+    2차 멘토링               : b2, after b1, 1d
+    발표자료준비              : b3, after b2, 1d
+    발표, 멘토링             : b4, after b3, 1d
 
 ```
 
@@ -32,11 +34,13 @@ gantt
     axisFormat Day %j
     tickInterval 5d
 
-    section 기획발표
-    주제 선정                : active, a1, 2026-01-01, 2d
+    section 기획
+    주제 선정 및 시장조사       : active, a1, 2026-01-01, 2d
     멘토링                  : a2, after a1, 1d
-    문서작업                 : a3, after a2, 2d
-    발표, 멘토링              : a4, after a3, 1d
+
+    section 발표자료
+    문서작업                 : b1, after a2, 1d
+    발표, 멘토링              : b2, after b1, 1d
 
 ```
 
