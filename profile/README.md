@@ -32,16 +32,16 @@ gantt
 
     section 기획발표
     주제 선정                : active, a1, 2026-01-01, 2d
-    4차 멘토링               : a2, after a1, 1d
+    멘토링                  : a2, after a1, 1d
     문서작업                 : a3, after a2, 2d
-    5차 멘토링               : a4, after a3, 1d
+    발표, 멘토링              : a4, after a3, 1d
 
     section 중간발표
     준비, 멘토링             : b1, after a4, 18d
-    발표                   : b2, after b1, 1d
+    발표, 멘토링             : b2, after b1, 1d
 
     section 최종발표
     개발, 멘토링             : c1, after b2, 16d
-    발표                   : c2, after c1, 1d
+    발표, 수료               : c2, after c1, 1d
 
 ```
