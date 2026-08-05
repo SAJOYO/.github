@@ -53,15 +53,21 @@ gantt
 ```mermaid
 gantt
     title 중간발표 (일차별 일정)
-    dateFormat  YYYY-MM-DD
-    
-    %% 축을 일수(Day 01, Day 05...) 형태로 표시하고 5일 단위로 눈금을 끕니다
-    axisFormat Day %j
-    tickInterval 5d
+    dateFormat  YYYY-MM-DD HH:mm
+
+    %% 반나절 단위는 dateFormat에 시간을 넣어 표현합니다 (전반부 00:00~12:00 / 후반부 12:00~24:00)
+    axisFormat %m/%d(%a)
+    tickInterval 1week
+    weekday monday
+    excludes weekends
 
     section 중간발표
-    준비, 멘토링             : active, a1, 2026-01-01, 18d
-    발표, 멘토링             : a2, after a1, 1d
+    준비                    : active, a1, 2026-08-12 00:00, 2026-08-28 12:00
+    멘토링               : milestone, m1, 2026-08-14 12:00, 0d
+    멘토링               : milestone, m2, 2026-08-18 12:00, 0d
+    멘토링               : milestone, m3, 2026-08-21 12:00, 0d
+    멘토링               : milestone, m4, 2026-08-25 12:00, 0d
+    발표, 멘토링             : crit, a2, 2026-08-28 12:00, 2026-08-28 23:00
 
 ```
 
@@ -70,14 +76,22 @@ gantt
 ```mermaid
 gantt
     title 최종발표 (일차별 일정)
-    dateFormat  YYYY-MM-DD
-    
-    %% 축을 일수(Day 01, Day 05...) 형태로 표시하고 5일 단위로 눈금을 끕니다
-    axisFormat Day %j
-    tickInterval 5d
+    dateFormat  YYYY-MM-DD HH:mm
+
+    %% 반나절 단위는 dateFormat에 시간을 넣어 표현합니다 (전반부 00:00~12:00 / 후반부 12:00~24:00)
+    axisFormat %m/%d(%a)
+    tickInterval 1week
+    weekday monday
+    excludes weekends
 
     section 최종발표
-    개발, 멘토링             : active, a1, 2026-01-01, 16d
-    발표, 수료               : a2, after a1, 1d
+    개발                    : active, a1, 2026-08-31 00:00, 2026-09-21 12:00
+    멘토링                  : milestone, m1, 2026-09-01 12:00, 0d
+    멘토링                  : milestone, m2, 2026-09-04 12:00, 0d
+    멘토링                  : milestone, m3, 2026-09-08 12:00, 0d
+    멘토링                  : milestone, m4, 2026-09-11 12:00, 0d
+    멘토링                  : milestone, m5, 2026-09-15 12:00, 0d
+    멘토링                  : milestone, m6, 2026-09-18 12:00, 0d
+    발표, 수료              : crit, a2, 2026-09-21 12:00, 2026-09-21 23:00
 
 ```
