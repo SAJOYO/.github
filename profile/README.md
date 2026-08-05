@@ -31,11 +31,13 @@ gantt
     dateFormat  YYYY-MM-DD
     
     %% 축을 일수(Day 01, Day 05...) 형태로 표시하고 5일 단위로 눈금을 끕니다
-    axisFormat Day %j
-    tickInterval 5d
+    %% axisFormat Day %j
+    axisFormat %m/%d(%a)
+    tickInterval 0.5day
+    excludes weekends
 
     section 기획
-    주제 선정 및 시장조사       : active, a1, 2026-01-01, 2d
+    주제 선정 및 시장조사       : active, a1, 2026-08-05, 2d
     멘토링                  : a2, after a1, 1d
 
     section 발표자료
