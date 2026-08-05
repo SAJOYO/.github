@@ -31,21 +31,20 @@ gantt
 ```mermaid
 gantt
     title 기획발표 (일차별 일정)
-    dateFormat  YYYY-MM-DD
+    dateFormat  YYYY-MM-DD HH:mm
     
-    %% 축을 월/일(요일) 형태로 표시하고 0.5일 단위로 눈금을 끕니다
-    %% axisFormat Day %j
+    %% 반나절 단위는 dateFormat에 시간을 넣어 표현합니다 (오전 09:00~13:00 / 오후 13:00~18:00)
     axisFormat %m/%d(%a)
-    tickInterval 0.5day
+    tickInterval 1day
     excludes weekends
 
     section 기획
-    주제 선정 및 시장조사       : active, a1, 2026-08-05, 2d
-    멘토링                  : a2, after a1, 1d
+    주제 선정 및 시장조사       : active, a1, 2026-08-05 00:00, 2026-08-07 12:00
+    멘토링                  : crit, a2, 2026-08-07 12:00, 2026-08-08 00:00
 
     section 발표자료
-    문서작업                 : b1, after a2, 1d
-    발표, 멘토링              : b2, after b1, 1d
+    문서작업                 : b1, 2026-08-10 00:00, 2026-08-11 12:00
+    발표, 멘토링              : crit, b2, 2026-08-11 12:00, 2026-08-11 23:00
 
 ```
 
