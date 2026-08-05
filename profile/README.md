@@ -58,8 +58,7 @@ gantt
     %% 반나절 단위는 dateFormat에 시간을 넣어 표현합니다 (전반부 00:00~12:00 / 후반부 12:00~24:00)
     axisFormat %m/%d(%a)
     tickInterval 2day
-    excludes weekends
-    
+
     section 중간발표
     준비                    : active, a1, 2026-08-12 00:00, 2026-08-28 00:00
     멘토링                 : milestone, m1, 2026-08-14 12:00, 0d
